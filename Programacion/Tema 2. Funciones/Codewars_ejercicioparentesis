@@ -1,0 +1,15 @@
+def duplicate_encode(word):
+#your code here
+    lword = word.lower()
+    salida = ''
+    for l in lword:
+        contador = lword.count(l)
+        if contador == 1:
+            salida += '('
+        else:
+            salida += ')'
+    return salida
+
+print(duplicate_encode('codeWarrior'))
+
+
